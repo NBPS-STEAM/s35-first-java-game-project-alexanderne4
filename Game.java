@@ -33,8 +33,8 @@ one.chapterTwo();
         System.out.println("[CONNECTING...]");
         try {
             for (int i=0; i<timeToWait ; i++) {
-                Thread.sleep(1000);
-                System.out.print(".");
+                Thread.sleep(500);
+                System.out.println("_._._._._");
             }
         } catch (InterruptedException ie)
         {
