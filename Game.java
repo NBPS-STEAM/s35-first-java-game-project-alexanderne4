@@ -28,10 +28,22 @@ one.chapterTwo();
   public void playerSetUp(){
     System.out.println("-----------------------------------------------------------------");
     System.out.println("                       12:08AM                             ");
-   System.out.println("[CONNECTING...]");
+   
+   int timeToWait = 10; 
+        System.out.println("[CONNECTING...]");
+        try {
+            for (int i=0; i<timeToWait ; i++) {
+                Thread.sleep(1000);
+                System.out.print(".");
+            }
+        } catch (InterruptedException ie)
+        {
+            Thread.currentThread().interrupt();
+        }
    System.out.println("[AUTHORIZING...]");
    System.out.println("[SUCCESSFUL...]");
    System.out.println("Hey there, can anyone see it?");
+
 
 		System.out.println("My name is Coueus, I'm the crew member of the secret operation");
     System.out.println("Well, last crew member....");
